@@ -1,0 +1,145 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.06rem;
+  background-color: hsl(228, 71%, 99%);
+  color: hsl(219, 12%, 42%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+#notification-card {
+  background-color: hsl(0, 0%, 100%);
+  width: 46.67rem;
+  padding: 1.67rem;
+  margin: 0.3rem 0;
+  border-radius: 15px;
+}
+
+#head-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  color: hsl(224, 21%, 14%);
+  font-weight: 800;
+}
+
+#head-section p {
+  cursor: pointer;
+}
+
+#head-section p:hover {
+  color: hsl(240, 1%, 30%);
+}
+
+#notification-count {
+  background-color: hsl(219, 85%, 26%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  padding: 0.13rem 0.8rem;
+  border-radius: 0.46rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 0.83rem;
+  margin: 0.67rem 0;
+  border-radius: 10px;
+}
+
+.unread {
+  background-color: hsl(214, 64%, 98%);
+  cursor: pointer;
+}
+
+.notification-dot {
+  height: 0.53rem;
+  width: 0.53rem;
+  margin-left: 0.53rem;
+  background-color: hsl(1, 90%, 64%);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.notification-text {
+  padding: 1rem 1.13rem;
+}
+
+.notification-attachment {
+  padding: 1.67rem;
+  margin-top: 0.67rem;
+  border: solid 2px hsl(211, 68%, 94%);
+  border-radius: 5px;
+}
+
+img {
+  width: 3rem;
+  height: 3rem;
+}
+
+p {
+  padding: 0 0 0.33rem 0;
+  margin: 0;
+}
+
+.image-attachment {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.attachment img {
+  position: relative;
+  top: -4.15rem;
+}
+
+.username {
+  color: hsl(224, 21%, 14%);
+  font-weight: 800;
+  padding-right: 0.2rem;
+}
+
+.group-name {
+  color: hsl(219, 85%, 26%);
+  font-weight: 800;
+  padding-left: 0.2rem;
+}
+
+.post-name {
+  font-weight: 800;
+}
+
+@media (max-width: 375px) {
+    #notification-card {
+        width: 87%;
+        margin: 0;
+    }
+
+    h2 {
+        margin-top: 1.06rem;
+    }
+
+    #head-section p {
+        cursor: pointer;
+        padding: 0;
+      }
+
+    .attachment img {
+        position: relative;
+        top: -8.5rem;
+      }
+}
